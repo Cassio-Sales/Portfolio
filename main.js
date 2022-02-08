@@ -1,4 +1,20 @@
+/* ScrollReveal: Mostrar elementos quando der scroll na página */
+const scrollReveal = ScrollReveal({
+  origin: 'top',
+  distance: '30px',
+  duration: 700,
+  reset: true
+})
+
+scrollReveal.reveal(
+  `#home, #home .text,
+  #about .image, #about,
+  `,
+  { interval: 100 }
+)
+
 //Sticky Navbar
+
 let header = document.querySelector('header')
 let menu = document.querySelector('#menu-icon')
 let navbar = document.querySelector('.navbar')
